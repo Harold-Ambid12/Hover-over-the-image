@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Hover Example</title>
+</head>
+<body>
+    <h2>Hover over the image:</h2>
+    <img 
+        id="hoverImage"
+        src="ruru.png" 
+        alt="Original Image"
+        onmouseover="swapImage()" 
+        onmouseout="restoreImage()"
+        width="300"
+    >
+
+    <script>
+        function swapImage() {
+            document.getElementById('hoverImage').src = 'rurur.png'; // Replace with the hover image
+        }
+
+        function restoreImage() {
+            document.getElementById('hoverImage').src = 'ruru.png'; // Original image
+        }
+    </script>
+</body>
+</html>
